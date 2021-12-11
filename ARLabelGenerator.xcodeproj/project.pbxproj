@@ -13,7 +13,7 @@
 		0A8421682759217A00E17C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8421662759217A00E17C65 /* Main.storyboard */; };
 		0A84216A2759217D00E17C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8421692759217D00E17C65 /* Assets.xcassets */; };
 		0A84216D2759217D00E17C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A84216B2759217D00E17C65 /* LaunchScreen.storyboard */; };
-		0A8421742759240A00E17C65 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A8421732759240A00E17C65 /* Resnet50.mlmodel */; };
+		A7C4246F275D3BC2000637EA /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7C4246E275D3BC2000637EA /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		0A8421672759217A00E17C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A8421692759217D00E17C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A84216C2759217D00E17C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A8421732759240A00E17C65 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		A7C4246E275D3BC2000637EA /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +60,10 @@
 				0A8421602759217A00E17C65 /* AppDelegate.swift */,
 				0A8421622759217A00E17C65 /* art.scnassets */,
 				0A8421642759217A00E17C65 /* ViewController.swift */,
-				0A8421732759240A00E17C65 /* Resnet50.mlmodel */,
 				0A8421662759217A00E17C65 /* Main.storyboard */,
 				0A8421692759217D00E17C65 /* Assets.xcassets */,
 				0A84216B2759217D00E17C65 /* LaunchScreen.storyboard */,
+				A7C4246E275D3BC2000637EA /* Resnet50.mlmodel */,
 			);
 			path = ARLabelGenerator;
 			sourceTree = "<group>";
@@ -140,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C4246F275D3BC2000637EA /* Resnet50.mlmodel in Sources */,
 				0A8421652759217A00E17C65 /* ViewController.swift in Sources */,
-				0A8421742759240A00E17C65 /* Resnet50.mlmodel in Sources */,
 				0A8421612759217A00E17C65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +289,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_WARNINGS = YES;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A5AAJ8TJ98;
+				DEVELOPMENT_TEAM = RXVA48C6DP;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				IBSC_WARNINGS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need the camera to display ARKit content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,9 +310,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BrendenYork.ARLabelGenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jayvandam.ARLabelGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_SUPPRESS_WARNINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,11 +324,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_WARNINGS = YES;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = A5AAJ8TJ98;
+				DEVELOPMENT_TEAM = RXVA48C6DP;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				IBSC_WARNINGS = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need the camera to display ARKit content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,9 +345,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BrendenYork.ARLabelGenerator;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jayvandam.ARLabelGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_SUPPRESS_WARNINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
